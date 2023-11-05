@@ -1,0 +1,217 @@
+/*Null styles*/
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    line-height: .7;
+    font-size: 14px;
+}
+
+input,
+button,
+textarea {
+    outline: none;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+li {
+    line-height: normal;
+}
+
+/*Styles*/
+body {
+    background-color: var(--color-soft-pink);
+}
+
+.periodic-section {
+    padding: 25px 0 10px 0;
+}
+
+.periodic-table {
+    margin: 0 auto;
+    border: 2px dotted var(--color-border-soft-gray);
+    padding: 15px;
+    background-color: var(--color-white);
+}
+
+.periodic-table__caption {
+    font-family: var(--segoe-print);
+    font-weight: var(--semi-bold);
+    line-height: var(--line-height-default);
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.periodic-table__row-number {
+    padding-right: 5px;
+}
+
+.number {
+    font-family: var(--segoe-print);
+    font-weight: var(--semi-bold);
+    line-height: var(--line-height-default);
+    font-size: 15px;
+    text-align: center;
+}
+
+.periodic-table__row-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--calibri);
+    width: 80px;
+    height: 80px;
+    padding: 5px;
+    border: 1px solid var(--color-border-gray);
+    border-radius: 3px;
+    transition: var(--transition);
+}
+
+.periodic-table__row-item:hover {
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px var(--color-border-gray)) brightness(1.1);
+    border: 1px solid var(--color-transparent);
+    border-radius: 10px;
+}
+
+.periodic-table__row-item.void:hover {
+    cursor: default;
+    filter: none;
+    border: none;
+    border-radius: 3px;
+}
+
+.periodic-table__row-item-number {
+    height: 10px;
+}
+
+.periodic-table__row-item-symbol {
+    font-weight: var(--semi-bold);
+    font-size: 27px;
+    text-align: center;
+    height: 19px;
+    margin-bottom: -15px;
+}
+
+.periodic-table__row-item-name {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 11px;
+    text-align: center;
+    height: 19px;
+}
+
+.periodic-table__row-item-mass {
+    display: flex;
+    justify-content: right;
+    align-items: end;
+    font-size: 10px;
+    height: 10px;
+}
+
+.void {
+    border: none;
+}
+
+.item-link {
+    align-items: center;
+    padding: 25px 0;
+}
+
+.periodic-table__row:last-child .item-link {
+    border-end-start-radius: 35px;
+}
+
+.yellow {
+    background: var(--radial-gradient-yellow);
+}
+
+.orange {
+    background: var(--radial-gradient-orange);
+}
+
+.red {
+    background: var(--radial-gradient-red);
+}
+
+.purple {
+    background: var(--radial-gradient-purple);
+}
+
+.moss {
+    background: var(--radial-gradient-moss);
+}
+
+.green {
+    background: var(--radial-gradient-green);
+}
+
+.blue {
+    background: var(--radial-gradient-blue);
+}
+
+.cyan {
+    background: var(--radial-gradient-cyan);
+}
+
+.mint {
+    background: var(--radial-gradient-mint);
+}
+
+:root {
+    --segoe-print: "Segoe Print", sans-serif;
+    --calibri: "Calibri", sans-serif;
+    --semi-bold: 600;
+    --line-height-default: 1.2;
+
+    --color-white: hsl(0, 100%, 100%);
+    --color-black: hsl(0, 0%, 0%);
+    --color-transparent: hsla(0, 0%, 0%, 0);
+    --color-soft-pink: hsl(240, 100%, 97%);
+    --color-border-soft-gray: hsl(0, 0%, 70%);
+    --color-border-gray: hsl(0, 0%, 50%);
+    --transition: .4s;
+
+    --radial-gradient-yellow: radial-gradient(hsl(60, 100%, 95%), hsl(60, 100%, 90%));
+    --radial-gradient-orange: radial-gradient(hsl(35, 100%, 95%), hsl(35, 100%, 90%));
+    --radial-gradient-red: radial-gradient(hsl(0, 100%, 95%), hsl(0, 100%, 90%));
+    --radial-gradient-purple: radial-gradient(hsl(240, 100%, 95%), hsl(240, 100%, 90%));
+    --radial-gradient-moss: radial-gradient(hsl(75, 100%, 95%), hsl(75, 50%, 90%));
+    --radial-gradient-green: radial-gradient(hsl(120, 100%, 95%), hsl(120, 100%, 90%));
+    --radial-gradient-blue: radial-gradient(hsl(210, 100%, 95%), hsl(210, 100%, 90%));
+    --radial-gradient-cyan: radial-gradient(hsl(180, 100%, 95%), hsl(180, 100%, 90%));
+    --radial-gradient-mint: radial-gradient(hsl(160, 100%, 95%), hsl(160, 100%, 90%));
+}
